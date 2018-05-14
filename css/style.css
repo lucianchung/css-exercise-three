@@ -1,7 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #333;
+  background-color: #D5D5D5;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .container {
@@ -10,12 +14,50 @@ body {
 }
 
 nav {
+  background-color: #000;
   margin: 0 auto;
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
 }
 
-.restaurant-list {
-  padding-top: 50px;
+.arrow-left{
+  font-size: .7em;
 }
+
+.restaurant-list {
+  /* input precise percentage in "padding-top" to eliminate gap
+  between "restaurant-list" and <nav>.
+  Is there a better way to do this? */
+  padding-top: 10%;
+  width: 100%
+}
+
+.location {
+  border: 1px solid #aaa;
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 1.3em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
+.content {
+  display: inline-block;
+}
+
+.arrow {
+  display: inline-block;
+  float: right;
+  font-size: .7em;
+  /* input precise percentage in "padding-top" to
+  vertically align arrow in the middle.
+  Is there a better way to do this? */
+  padding-top: 3%;
+}
+
+.location:hover { background-color:#A19FA1; }
